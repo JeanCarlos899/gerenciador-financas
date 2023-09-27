@@ -1,3 +1,4 @@
+package src;
 public class Investimento {
     private double valor;
     private String data;
