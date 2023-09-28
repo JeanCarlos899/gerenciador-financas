@@ -1,17 +1,14 @@
-import java.util.Date;
-
-
 public class Receita {
     private double valor;
     private String descricao;
     private String categoria;
-    private Date data;
+    private String data;
 
-    public Receita(double valor, String descricao, String categoria, Date data) {
+    public Receita(double valor, String descricao, String data, String categoria) {
         this.valor = valor;
         this.descricao = descricao;
-        this.categoria = categoria;
         this.data = data;
+        this.categoria = categoria;
     }
 
     public double getValor() {
@@ -26,7 +23,7 @@ public class Receita {
         return this.categoria;
     }
 
-    public Date getData() {
+    public String getData() {
         return this.data;
     }
 }

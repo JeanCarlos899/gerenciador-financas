@@ -1,11 +1,9 @@
-import java.util.Date;
-
 public class Meta {
     private double valor;
     private String descricao;
-    private Date data;
+    private String data;
 
-    public Meta(double valor, String descricao, Date data) {
+    public Meta(double valor, String descricao, String data) {
         this.valor = valor;
         this.descricao = descricao;
         this.data = data;
@@ -19,7 +17,7 @@ public class Meta {
         return this.descricao;
     }
 
-    public Date getData() {
+    public String getData() {
         return this.data;
     }
 }

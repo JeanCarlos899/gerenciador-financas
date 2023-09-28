@@ -1,10 +1,8 @@
-import java.util.Date;
-
 public class Investimento {
     private double valor;
-    private Date data;
+    private String data;
 
-    public Investimento(double valor, Date data) {
+    public Investimento(double valor, String data) {
         this.valor = valor;
         this.data = data;
     }
@@ -13,7 +11,7 @@ public class Investimento {
         return this.valor;
     }
 
-    public Date getData() {
+    public String getData() {
         return this.data;
     }
 }

@@ -1,14 +1,14 @@
-import java.util.Date;
-
 public class Orcamento {
     private double valor;
     private String descricao;
-    private Date data;
+    private String data;
+    private String categoria;
 
-    public Orcamento(double valor, String descricao, Date data) {
+    public Orcamento(double valor, String descricao, String data, String categoria) {
         this.valor = valor;
         this.descricao = descricao;
         this.data = data;
+        this.categoria = categoria;
     }
 
     public double getValor() {
@@ -19,7 +19,11 @@ public class Orcamento {
         return this.descricao;
     }
 
-    public Date getData() {
+    public String getData() {
         return this.data;
+    }
+
+    public String getCategoria() {
+        return this.categoria;
     }
 }

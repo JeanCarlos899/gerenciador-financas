@@ -1,12 +1,10 @@
-import java.util.Date;
-
 public class Despesa {
     private double valor;
     private String descricao;
     private String categoria;
-    private Date data;
+    private String data;
 
-    public Despesa(double valor, String descricao, String categoria, Date data) {
+    public Despesa(double valor, String descricao, String categoria, String data) {
         this.valor = valor;
         this.descricao = descricao;
         this.categoria = categoria;
@@ -25,7 +23,7 @@ public class Despesa {
         return this.categoria;
     }
 
-    public Date getData() {
+    public String getData() {
         return this.data;
     }
 }
